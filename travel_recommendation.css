@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+nav {
+    background: linear-gradient(to right, #1d2b34, #2c3e50);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo i {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.search i {
+    color: #2c3e50;
+    margin-left: 8px;
+}
+
+.btn {
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1d2b34;
+}
+
+/* Ensure the image fills the screen */
+.background-img {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.bgimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image covers the entire area without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Keeps the image in the background */
+}
+
+/* Position and style the overlay text */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* White text */
+    font-family: Arial, sans-serif; /* Example font */
+}
+
+.text-overlay h1 {
+    font-size: 3em;
+    margin: 0.2em;
+}
+
+.text-overlay p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.text-overlay .btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.text-overlay .btn:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+.Sidebar {
+    position: absolute;
+    left: 10px;
+    bottom: 10%; /* Adjust to move vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icon {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Hover effect for icons */
+}
+
+.ps{
+    color: black;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ss{
+    color: black;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aboutpara{
+    border-color: red;
+    border-radius: 4px;
+}
+
+
+/* General Styling */
+.aboutus-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.background-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.bgimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    max-width: 50%;
+}
+
+.text-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.our-team {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.our-team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #555;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.social-icon {
+    color: white;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ff6347;
+}
