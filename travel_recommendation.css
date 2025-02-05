@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,9 +17,10 @@ nav {
     justify-content: space-between;
 }
 
-nav a{
+nav a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .logo {
@@ -38,12 +39,6 @@ nav a{
 .menu {
     display: flex;
     gap: 20px;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
 }
 
 .menu a:hover {
@@ -85,33 +80,30 @@ nav a{
     background-color: #1d2b34;
 }
 
-/* Ensure the image fills the screen */
 .background-img {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     overflow: hidden;
 }
 
 .bgimg {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Makes sure the image covers the entire area without distortion */
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Keeps the image in the background */
+    z-index: -1;
 }
 
-/* Position and style the overlay text */
 .text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white; /* White text */
-    font-family: Arial, sans-serif; /* Example font */
+    color: white;
 }
 
 .text-overlay h1 {
@@ -127,20 +119,20 @@ nav a{
 .text-overlay .btn {
     padding: 10px 20px;
     font-size: 1.1em;
-    background-color: #007bff; /* Button color */
+    background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .text-overlay .btn:hover {
-    background-color: #0056b3; /* Darker button color on hover */
+    background-color: #0056b3;
 }
 
 .Sidebar {
     position: absolute;
     left: 10px;
-    bottom: 10%; /* Adjust to move vertically */
+    bottom: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,135 +146,234 @@ nav a{
 }
 
 .social-icon:hover {
-    color: #007bff; /* Hover effect for icons */
+    color: #007bff;
 }
 
-.ps{
+.ps {
     color: black;
     font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.ss{
+.ss {
     color: black;
     font-size: 2em;
     font-family: 'Times New Roman', Times, serif;
 }
 
-.aboutpara{
+.aboutpara {
     border-color: red;
     border-radius: 4px;
 }
 
-
-/* General Styling */
-.aboutus-container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.background-img {
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.bgimg {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.text-overlay {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    color: white;
-    max-width: 50%;
-}
-
-.text-overlay h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.text-overlay p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.btn {
-    padding: 10px 20px;
-    background-color: #ff6347;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
 .our-team {
-    margin-top: 40px;
     text-align: center;
+    padding: 50px 0;
 }
 
 .our-team h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
 }
 
-.team-members {
+.team-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .team-member {
-    flex: 1 1 30%;
-    margin: 10px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
     text-align: center;
 }
 
-.team-img {
-    width: 100%;
-    max-width: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.team-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.team-role {
-    font-size: 1rem;
-    color: #555;
-}
-
-.sidebar {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 10px 0 0 10px;
-}
-
-.social-icon {
-    color: white;
+.team-member h3 {
     margin: 10px 0;
-    font-size: 1.5rem;
-    text-decoration: none;
+    font-size: 1.2em;
+    color: #333;
 }
 
-.social-icon:hover {
-    color: #ff6347;
+.team-member p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.role-btn {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.role-btn:hover {
+    background: #357ab8;
+}
+
+#contactus {
+    position: relative;
+    padding: 80px 0;
+}
+
+.contactus-container {
+    position: relative;
+    z-index: 2;
+}
+
+.contactus-container .background-img {
+    background-image: url('images/bgimg3.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.text-overlay h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.text-overlay p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-media h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.social-media .social-icon {
+    font-size: 2em;
+    margin: 10px;
+    color: #333;
+}
+
+.social-media .social-icon:hover {
+    color: #4CAF50;
+}
+
+
+#search-input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* Hero Section */
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('images/bgimg2.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Results Section */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.result-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.result-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.no-results {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .menu {
+        order: 2;
+    }
+    
+    .search {
+        width: 100%;
+        justify-content: center;
+    }
 }
